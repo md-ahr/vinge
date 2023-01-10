@@ -1,8 +1,26 @@
-body {
-    background-color: #ddd;
+// base
+@import './base/variables';
+@import './base/functions';
+@import './base/reset';
 
-    h1 {
-        font-size: 1.25rem;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-}
+// mixins
+@import './mixins/border-radius';
+@import './mixins/grid';
+@import './mixins/pagination';
+@import './mixins/text-truncate';
+
+// helpers
+@import './helpers/colors';
+@import './helpers/position';
+@import './helpers/stacks';
+@import './helpers/text-truncate';
+@import './helpers/visually-hidden';
+
+// components
+@import './components/button';
+@import './components/card';
+@import './components/form';
+@import './components/table';
+
+// utilities
+@import './utilities/utilities';
