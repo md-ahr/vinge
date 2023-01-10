@@ -1,11 +1,18 @@
 import { defineConfig } from "vite";
-import path from "path";
 
 export default defineConfig({
+    base: "/",
     build: {
         lib: {
-            entry: path.resolve(__dirname, "src/js/vinge.js"),
-            name: "vinge",
+            entry: "./src/js/vinge.js",
+            formats: ["es"],
+            fileName: "vinge.bundle.min",
         },
+        rollupOptions: {
+            output: {
+                assetFileNames: "vinge.bundle.min.[ext]",
+            },
+        },
+        minify: "terser",
     },
 });
