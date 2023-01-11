@@ -1,0 +1,13 @@
+// include mixins for generate colors
+
+@include generate-color($theme-colors, "theme");
+@include generate-color($gray-colors, "gray");
+@include generate-color($blue-colors, "blue");
+@include generate-color($green-colors, "green");
+@include generate-color($red-colors, "red");
+@include generate-color($orange-colors, "orange");
+@include generate-color($indigo-colors, "indigo");
+@include generate-color($yellow-colors, "yellow");
+@include generate-color($purple-colors, "purple");
+@include generate-color($teal-colors, "teal");
+@include generate-color($pink-colors, "pink");

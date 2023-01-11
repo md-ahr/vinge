@@ -1,0 +1,40 @@
+// mixins for generate colors
+
+@mixin button-color($colorName) {
+    background-color: map-get($theme-colors, $colorName);
+
+    @if #{$colorName} ==
+        "light" or
+        #{$colorName} ==
+        "secondary" or
+        #{$colorName} ==
+        "warning"
+    {
+        color: $black;
+    } @else {
+        color: $white;
+    }
+}
+
+@mixin generate-color($colorPalettes, $themeName) {
+    @each $name, $value in $colorPalettes {
+        @if #{$themeName} == "theme" {
+            .text-#{$name} {
+                color: #{$value};
+            }
+            .bg-#{$name} {
+                background-color: #{$value};
+            }
+            .btn-#{$name} {
+                @include button-color(#{$name});
+            }
+        } @else {
+            .text-#{$themeName}-#{$name} {
+                color: #{$value};
+            }
+            .bg-#{$themeName}-#{$name} {
+                background-color: #{$value};
+            }
+        }
+    }
+}
