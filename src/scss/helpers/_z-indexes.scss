@@ -1,7 +1,7 @@
 // generate z indexes class properties
 
 @each $name, $value in $z-indexes {
-    .z-index-#{$name} {
+    .zindex-#{$name} {
         z-index: #{$value};
     }
 }
