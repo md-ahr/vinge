@@ -1,0 +1,29 @@
+// generate position class properties
+
+@each $name, $value in $positionType {
+    .position-#{$name} {
+        position: #{$value};
+    }
+}
+
+@each $name, $value in $positionTop {
+    .#{$name} {
+        top: #{$value};
+    }
+}
+
+@each $name, $value in $positionLeft {
+    .#{$name} {
+        top: #{$value};
+    }
+}
+@each $name, $value in $positionRight {
+    .#{$name} {
+        top: #{$value};
+    }
+}
+@each $name, $value in $positionBottom {
+    .#{$name} {
+        top: #{$value};
+    }
+}

@@ -319,3 +319,58 @@ $border-radius: (
     "50": $radius-50,
     "100": $radius-100,
 );
+
+/*
+*********************
+      positions
+*********************
+*/
+
+$sticky: sticky;
+$fixed: fixed;
+$relative: relative;
+$absolute: absolute;
+
+$top-0: 0;
+$left-0: 0;
+$right-0: 0;
+$bottom-0: 0;
+$top-50: 50%;
+$lef-50: 50%;
+$right-50: 50%;
+$bottom-50: 50%;
+$top-100: 100%;
+$lef-100: 100%;
+$right-100: 100%;
+$bottom-100: 100%;
+
+$positionType: (
+    "sticky": $sticky,
+    "fixed": $fixed,
+    "relative": $relative,
+    "absolute": $absolute,
+);
+
+$positionTop: (
+    "top-0": $top-0,
+    "top-50": $top-50,
+    "top-100": $top-100,
+);
+
+$positionLeft: (
+    "left-0": $left-0,
+    "left-50": $lef-50,
+    "left-100": $lef-100,
+);
+
+$positionRight: (
+    "right-0": $right-0,
+    "right-50": $right-50,
+    "right-100": $right-100,
+);
+
+$positionBottom: (
+    "bottom-0": $bottom-0,
+    "bottom-50": $bottom-50,
+    "bottom-100": $bottom-100,
+);
