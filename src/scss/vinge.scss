@@ -1,28 +1,29 @@
 // base
-@import './base/variables';
-@import './base/functions';
-@import './base/reset';
+@import "./base/variables";
+@import "./base/functions";
+@import "./base/reset";
 
 // mixins
-@import './mixins/colors';
-@import './mixins/border-radius';
-@import './mixins/grid';
-@import './mixins/pagination';
-@import './mixins/text-truncate';
+@import "./mixins/colors";
+@import "./mixins/border-radius";
+@import "./mixins/grid";
+@import "./mixins/pagination";
+@import "./mixins/text-truncate";
 
 // helpers
-@import './helpers/colors';
-@import './helpers/z-indexes';
-@import './helpers/position';
-@import './helpers/stacks';
-@import './helpers/text-truncate';
-@import './helpers/visually-hidden';
+@import "./helpers/colors";
+@import "./helpers/z-indexes";
+@import "./helpers/border-radius";
+@import "./helpers/position";
+@import "./helpers/stacks";
+@import "./helpers/text-truncate";
+@import "./helpers/visually-hidden";
 
 // components
-@import './components/button';
-@import './components/card';
-@import './components/form';
-@import './components/table';
+@import "./components/button";
+@import "./components/card";
+@import "./components/form";
+@import "./components/table";
 
 // utilities
-@import './utilities/utilities';
+@import "./utilities/utilities";
