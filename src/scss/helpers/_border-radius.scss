@@ -1,0 +1,7 @@
+// generate border radius class properties
+
+@each $name, $value in $border-radius {
+    .radius-#{$name} {
+        border-radius: #{$value};
+    }
+}
